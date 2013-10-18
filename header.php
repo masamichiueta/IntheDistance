@@ -10,7 +10,7 @@
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico">
 	<!-- iPhone icon -->
-	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/images/icon.jpg" />
+	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/images/icon.png" />
 	<!-- Styles -->
 	<link href="<?php echo get_template_directory_uri(); ?>/css/normalize.css" type="text/css" rel="stylesheet">
 	<link href="<?php echo get_stylesheet_uri(); ?>" rel="stylesheet">
