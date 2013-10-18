@@ -8,4 +8,4 @@ Simple, Beautiful theme.
 ---
 
 
-![IntheDistance](https://github.com/maasaamiichii/IntheDistance/blob/master/IntheDistance/screenshot.png)
+![IntheDistance](https://raw.github.com/maasaamiichii/IntheDistance/master/IntheDistance/screenshot.png)
