@@ -78,7 +78,7 @@ a:hover{
 .first {margin-left:0;clear: left;}
 
 
-.read-more{
+.more-link{
 	float: right;
 }
 
@@ -277,7 +277,7 @@ Contents -----------------------------------------------------------------------
 	#blog .content{
 		margin: 10px 0 0 0;
 		padding: 10px 20px 0 20px;
-		font-size: 13px;
+		font-size: 14px;
 	}
 
 		#blog .content .post{
@@ -330,7 +330,7 @@ Contents -----------------------------------------------------------------------
 	#blog .sidebar{
 		margin: 10px 0 0 0;
 		padding: 10px 20px 0 20px;
-		font-size: 13px;
+		font-size: 14px;
 	}
 	
 		#blog .sidebar .widget{

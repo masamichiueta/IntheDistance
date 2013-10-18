@@ -15,7 +15,7 @@
 	        	<span class="post-comments"><i class="icon-comments"></i> <?php comments_popup_link('0', '1', '%'); ?></span>
 	        </div>
 	        <div class="entry clearfix">
-	          <?php the_content('Read more &raquo;'); ?>
+	          <?php the_content(); ?>
 	        </div>
 			<div class="commentarea">
 	      	<?php comments_template(); ?>
@@ -26,8 +26,8 @@
 		else : ?>
 	<?php endif; ?>
 	<div class="page clearfix">
-		<span class="previous-entries"><?php next_posts_link('« PREV'); ?></span>
-		<span class="next-entries"><?php previous_posts_link('NEXT »'); ?></span>
+		<span class="next-entries"><?php next_post_link(); ?></span>
+		<span class="previous-entries"><?php previous_post_link(); ?></span>
 	</div>
 	</div>
 </div>

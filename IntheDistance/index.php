@@ -15,7 +15,11 @@
 	        	<span class="post-comments"><i class="icon-comments"></i> <?php comments_popup_link('0', '1', '%'); ?></span>
 	        </div>
 	        <div class="entry clearfix">
+	          <?php if (qtrans_getLanguage() == 'en') : // English ver ?>
 	          <?php the_content('Read more &raquo;'); ?>
+	          <?php else : // Japanese ver ?>
+	          <?php the_content('続きを読む &raquo;'); ?>
+	          <?php endif; ?>
 	        </div>
 			</div>
 			<hr>
@@ -24,8 +28,13 @@
 		else : ?>
 	<?php endif; ?>
 	<div class="page clearfix">
+		<?php if (qtrans_getLanguage() == 'en') : // English ver ?>
 		<span class="previous-entries"><?php next_posts_link('« PREV'); ?></span>
 		<span class="next-entries"><?php previous_posts_link('NEXT »'); ?></span>
+   		<?php else : // Japanese ver ?>
+	   	<span class="previous-entries"><?php next_posts_link('« 前のページ'); ?></span>
+		<span class="next-entries"><?php previous_posts_link('次のページ »'); ?></span>
+   		<?php endif; ?>
 	</div>
 	</div>
 </div>

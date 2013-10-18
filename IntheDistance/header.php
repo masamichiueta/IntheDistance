@@ -37,7 +37,7 @@
 <div class="clear"></div>
 
 <header class="clearfix">
-<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"></a></h1>
+<h1><a href="<?php bloginfo('url'); ?>"</a></h1>
 
 <nav>
 	<?php wp_nav_menu( array ( 'theme_location' => 'header-navi' ) ); ?>

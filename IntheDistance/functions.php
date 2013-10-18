@@ -51,4 +51,5 @@ register_sidebar( array(
 ) );
 add_theme_support( 'menus' );
 register_nav_menu( 'header-navi', 'Header Navigation' );
+
 ?>
