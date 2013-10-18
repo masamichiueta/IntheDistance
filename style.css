@@ -1,0 +1,430 @@
+/* ---------------------------------------------------------------------------------------------------------- 
+General Settings ----------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+body{
+	font-family: "Times New Roman", "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","Osaka","メイリオ","Meiryo","ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+	background:#fff;
+	width: 100%;
+}
+
+h1, h2, h3, h4, h5{
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+hr{
+	width: 100%;
+	color: #5a5b5c;
+}
+
+
+.rainbowDash{
+    width: 100%;
+    height: 3px;
+}
+
+.rainbowDash .yellow,
+.rainbowDash .blue
+
+{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.rainbowDash .yellow { background-color: #f7ff3a; }
+.rainbowDash .blue { background-color: #7fb5fc; }
+
+
+a{
+	text-decoration: none;
+	color: #5a5b5c;
+}
+
+a:hover{
+	color: #7fb5fc;
+}
+
+.grid1, .grid2, .grid3, .grid4, .grid5, .grid6, .grid7, .grid8, .grid9, .grid10, .grid11 {
+	float: left;
+	display: inline;
+	margin-left: 2.1276%;
+}
+
+.grid1 {width: 6.3829%;}
+.grid2 {width: 14.8936%;}
+.grid3 {width: 23.4042%;}
+.grid4 {width: 31.9148%;}
+.grid5 {width: 40.4255%;}
+.grid6 {width: 48.9361%;}
+.grid7 {width: 57.4468%;}
+.grid8 {width: 65.9574%;}
+.grid9 {width: 74.4681%;}
+.grid10 {width: 82.9787%;}
+.grid11 {width: 91.4893%;}
+.first {margin-left:0;clear: left;}
+
+
+.read-more{
+	float: right;
+}
+
+/*---------- FORMS ----------*/
+input[type=text],input[type=submit],textarea {
+	width:100%;
+	padding:5px 5px;
+	margin-bottom: 10px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+
+input[type=submit] {
+	color:#fff;
+	text-shadow:none;
+	display:block;
+	border:0;
+	text-transform:none;
+	background:#5a5b5c;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+}
+
+input[type=submit]:hover,#contact-form input[type=submit]:active {
+	background: #7b7b7b;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------------- 
+Page Settings ----------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+#wrapper{
+	min-width: 769px;
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+
+header{
+	height: 70px;
+}
+
+header h1{
+	float: left;
+	padding: 0 20px 10px 10px;
+	margin: 0 0 0 0;
+}
+
+
+header h1 a{
+	display: block;
+    margin: 0 auto;
+    width: 230px;
+    height: 59px;
+    background: url(images/logo.png) no-repeat;
+    background-size: 230px 59px;
+}
+
+nav{
+	margin: 0;
+	padding: 0;
+}	
+	nav ul{
+		list-style: none;
+		float: right;
+	}
+	
+	nav ul li{
+		float: left;
+		padding: 10px 20px 10px 20px;
+		margin: 0 0px 10px 5px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;	
+	}
+	
+	nav ul .current-menu-item, nav ul .current_page_parent{
+		background-color:#5a5b5c;
+	}
+	nav ul .current-menu-item a,nav ul .current_page_parent a{
+		color: #fff;
+	}
+
+	
+	
+footer{
+	height:50px;
+	font-size: 13px;
+}
+
+	footer ul{
+		list-style: none;
+		float: left;
+		background: #fff;
+		margin: 0;
+		padding-left: 10px;
+	}
+	
+		footer ul li{
+			float: left;
+			padding: 0px 10px 0px 0px;
+			font-size: 30px;
+		}
+		
+
+footer .copyright{
+	margin: 0;
+	padding: 0 10px;
+	float: right;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------- 
+Contents ----------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+	
+#main-content{
+	width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 15px;
+}
+#main-content .image,
+#main-content .bio
+{
+    float: left;
+    width: 50%;
+    height: 350px;
+}
+
+#main-content .image
+{
+	padding: 100px 0 0 0;
+	text-align: center;
+}
+
+#main-content .bio
+{
+   padding: 100px 0px 0px 0px;
+    
+}
+
+#main-content .bio-text
+{
+   padding: 0 0 0 100px;
+}
+
+#creative{
+	width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+#creative h2{
+	padding: 20px 0 30px 0;
+}
+
+#creative .content{
+	padding: 0 10px;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 15px;
+}
+
+	#creative .content .grid-image-area{
+		text-align: center;
+	}
+	
+	#creative .content .grid-image-area .grid-image{
+		width: 100%;
+	}
+	
+	#creative .content .grid-image-area p{
+		text-align: center;
+		line-height: 10px;
+	}
+	
+	
+#blog{
+/* 	font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","Osaka","メイリオ","Meiryo","ＭＳ Ｐゴシック","MS PGothic",sans-serif; */
+	width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+	#blog .content{
+		margin: 10px 0 0 0;
+		padding: 10px 20px 0 20px;
+		font-size: 13px;
+	}
+
+		#blog .content .post{
+			
+		}
+		
+			#blog .content .post h3{
+				font-size: 25px;
+			}
+			
+			#blog .content .post .post-info{
+				padding: 20px 0 10px 0;
+			}
+				
+				#blog .content .post .post-info .post-date{
+					padding: 0 10px 0 0;
+				}
+				
+				#blog .content .post .post-info .post-category{
+					padding: 0 10px;
+				}
+				
+				#blog .content .post .post-info .post-comments{
+					padding: 0 10px;				}
+
+			
+			#blog .content .post .entry{
+				padding: 0 0 20px 0;
+			}
+			
+		#blog .content hr{
+			border: dotted 1px #5a5b5c;
+		}
+		
+		#blog .content .page{
+		
+		}
+			#blog .content .page .previous-entries{
+				float: left;
+				padding: 20px 0;
+			}
+			
+			#blog .content .page .next-entries{
+				padding: 20px 0;
+				float: right;
+			}
+
+
+
+	#blog .sidebar{
+		margin: 10px 0 0 0;
+		padding: 10px 20px 0 20px;
+		font-size: 13px;
+	}
+	
+		#blog .sidebar .widget{
+			margin-bottom: 30px;	
+		}
+		
+		#blog .sidebar label{
+			font-size: 20px;	
+		}
+
+	
+		#blog .sidebar .widget h3{
+			padding-bottom: 10px;
+			font-size: 20px;
+		}
+		
+		#blog .sidebar .widget ul{
+			margin: 0;
+			padding: 0 0 0 10px;
+			list-style: none;			
+		}
+		
+		
+#notfound{
+	margin: 0 auto;
+	text-align: center;
+	height: 200px;
+	font-size: 15px;
+}
+
+	#notfound h2{
+		margin: 50px 0;
+		font-size: 40px;
+	}
+	
+	#notfound p{
+		
+	}
+
+
+/* ---------------------------------------------------------------------------------------------------------- 
+Wordpress Settings ----------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+/* qTranslate */
+.clear {
+	clear:both;
+}
+
+ul.qtrans_language_chooser{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: right;
+}
+ul.qtrans_language_chooser li{
+	float: left;
+	font-size: 15px;
+	padding-right: 20px;
+}
+ul.qtrans_language_chooser li.active{
+	background: #5a5b5c;
+		
+}
+ul.qtrans_language_chooser li.active a{
+	color:#fff;
+		
+}
+
+/* Comment */
+.form-allowed-tags{display:none;}
+.says{display:none;}
+.reply{text-align: right;}
+.fn{font-style:normal;}
+.avatar{
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+.comment-author{ padding-bottom: 10px;}
+.comment-author a{padding-left: 20px;}
+ul.commentlist{
+	list-style: none;
+	margin: 10px 0 10px 0;
+	padding: 0;
+}
+ul.commentlist ul.children{
+	clear: both;
+	list-style: none;	
+	margin: 10px 0;
+}
+#commentform label{display: block;}
+#author{width:200px;}
+#email{width:200px; }
+#url{width:200px; }
+#comment{width:400px; height:100px; }
+#submit{width: 400px;}
