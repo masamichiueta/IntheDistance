@@ -6,7 +6,7 @@
 	Description: Masamichi Ueta Original Wordpress Theme
 	License: GNU General Public License version 3.0
 	License URI: http://www.gnu.org/licenses/gpl-3.0.html
-	Version: 1.0
+	Version: 0.1
 	Tags: two-columns, fixed-width, custom-header, editor-style
 	Author: Masamichi Ueta
 	Author URI: http://www.uetamasamichi.com
@@ -23,7 +23,7 @@ General Settings ---------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
 
 body{
-	font-family: "Times New Roman", "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","Osaka","メイリオ","Meiryo","ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+	font-family: "Times New Roman","Hiragino Kaku Gothic Pro","Osaka", "Meiryo","MS PGothic",sans-serif;
 	background:#fff;
 	width: 100%;
 }
