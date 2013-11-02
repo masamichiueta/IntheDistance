@@ -1,10 +1,26 @@
 <hr>
 <footer class="clearfix">
 	<ul>
-		<li><a href="https://github.com/maasaamiichii"><i class="icon-github-sign"></i></a></li>
-		<li><a href="https://twitter.com/maasaamiichii"><i class="icon-twitter-sign"></i></a></li>
+        <?php if( $github_account_url = of_get_option('github_account_url', false)) : ?>
+		<li><a href="<?php echo $github_account_url; ?>"><i class="fa fa-github-square"></i></a></li>
+		<?php endif; ?>
+		<?php if( $twitter_account_url = of_get_option('twitter_account_url', false)) : ?>
+		<li><a href="<?php echo $twitter_account_url; ?>"><i class="fa fa-twitter-square"></i></a></li>
+		<?php endif; ?>
+		<?php if( $facebook_account_url = of_get_option('facebook_account_url', false)) : ?>
+		<li><a href="<?php echo $facebook_account_url; ?>"><i class="fa fa-facebook-square"></i></a></li>
+		<?php endif; ?>
 	</ul>
-	<p class="copyright">&copy; 2011 - 2013 Masamichi Ueta</p>
+	<p class="copyright">
+	<?php if (!$footer = of_get_option('footer_copyright', false) ) { ?>
+	<?php _e('Powered by', 'inthedistance'); ?> 
+		<a href="http://wordpress.org/" title="<?php esc_attr_e( 'All for your creativeness', 'inthedistance' ); ?>" rel="generator"><?php printf( __( 'WordPress', 'inthedistance' ) ); ?>
+		</a> &amp; 
+		<a href="http://www.uetamasamichi.com"><?php _e('IntheDistance', 'inthedistance'); ?>.</a>
+	<?php } else {
+		echo stripslashes($footer);
+	} ?>
+	</p>
 </footer>
 <div class="rainbowDash">
 	<div class="yellow"></div>

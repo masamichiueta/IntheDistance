@@ -10,12 +10,20 @@
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	        <h3><?php the_title(); ?></h3>
 	        <div class="post-info">
-	        	<span class="post-date"><i class="icon-pencil"></i> <?php echo get_the_date(); ?></span>
-	        	<span class="post-category"><i class="icon-list-ul"></i> <?php the_category(','); ?></span> 
-	        	<span class="post-comments"><i class="icon-comments"></i> <?php comments_popup_link('0', '1', '%'); ?></span>
+	        	<span class="post-date"><i class="fa fa-pencil-square-o"></i> <?php echo get_the_date(); ?></span>
+	        	<span class="post-category"><i class="fa fa-list-ul"></i> <?php the_category(','); ?></span> 
+	        	<span class="post-comments"><i class="fa fa-comments-o"></i> <?php comments_popup_link('0', '1', '%'); ?></span>
+	        	<span class="post-tag"><i class="fa fa-tags"></i> <?php the_tags(''); ?></span>
 	        </div>
 	        <div class="entry clearfix">
-	          <?php the_content(); ?>
+	        <?php if (has_post_thumbnail()) {
+				the_post_thumbnail();
+				}
+			?>
+	        <?php the_content(); ?>
+	        </div>
+	        <div class="post-page">
+	        <?php wp_link_pages(); ?>
 	        </div>
 			<div class="commentarea">
 	      	<?php comments_template(); ?>

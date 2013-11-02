@@ -1,7 +1,7 @@
 <div class="grid3">
 	<div class="sidebar">
-    <?php if ( is_active_sidebar( 'sidebar-1' ) ) :
-		dynamic_sidebar( 'sidebar-1' );
+    <?php if ( is_active_sidebar( 'sidebar' ) ) :
+		dynamic_sidebar( 'sidebar' );
 		else: ?>
 		<div class="widget">
 		<h3>No Widget</h3>

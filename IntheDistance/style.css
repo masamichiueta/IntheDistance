@@ -1,10 +1,20 @@
-/*
-Theme Name: IntheDistance
-Description: Masamichi Ueta Original Wordpress Theme
-Author: Masamichi Ueta
-Author URI: http://www.uetamasamichi.com
-Version: 1.0
-License: Apache License Version 2.0,
+/* LICENSE & DETAILS
+   ==================================================
+
+	Theme Name: IntheDistance
+	Theme URI: http://wordpress.org/
+	Description: Masamichi Ueta Original Wordpress Theme
+	License: GNU General Public License version 3.0
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+	Version: 1.0
+	Tags: two-columns, fixed-width, custom-header, editor-style
+	Author: Masamichi Ueta
+	Author URI: http://www.uetamasamichi.com
+
+	All files, unless otherwise stated, are released under the GNU General Public License
+	version 3.0 (http://www.gnu.org/licenses/gpl-3.0.html)
+	
+   ==================================================
 */
 
 
@@ -92,6 +102,20 @@ a:hover{
 	float: right;
 }
 
+.wp-caption,  .wp-caption-text, .sticky, .gallery-caption, .bypostauthor{
+	
+}
+
+.alignright{
+	text-align: right;
+}
+.alignleft{
+	text-align: left;
+}
+.aligncenter{
+	text-align: center;
+}
+
 /*---------- FORMS ----------*/
 input[type=text],input[type=submit],textarea {
 	width:100%;
@@ -138,21 +162,19 @@ header{
 	height: 70px;
 }
 
-header h1{
+/* for logo image */
+header h1.logo-image{
 	float: left;
 	padding: 0 20px 10px 10px;
 	margin: 0 0 0 0;
 }
 
-
-header h1 a{
-	display: block;
-    margin: 0 auto;
-    width: 230px;
-    height: 59px;
-    background: url(images/logo.png) no-repeat;
-    background-size: 230px 59px;
+/* for logo text */
+header div.logo-text{
+	float: left;
+	
 }
+
 
 nav{
 	margin: 0;
@@ -311,7 +333,12 @@ Contents -----------------------------------------------------------------------
 				}
 				
 				#blog .content .post .post-info .post-comments{
-					padding: 0 10px;				}
+					padding: 0 10px;
+				}
+				
+				#blog .content .post .post-info .post-tag{
+					padding: 0 10px;
+				}
 
 			
 			#blog .content .post .entry{
@@ -320,6 +347,11 @@ Contents -----------------------------------------------------------------------
 			
 		#blog .content hr{
 			border: dotted 1px #5a5b5c;
+		}
+		
+		#blog .content .post-page{
+			padding: 10px 0;
+			text-align: center;
 		}
 		
 		#blog .content .page{
@@ -332,6 +364,18 @@ Contents -----------------------------------------------------------------------
 			
 			#blog .content .page .next-entries{
 				padding: 20px 0;
+				float: right;
+			}
+		
+		#blog .content .comment-page{
+			padding: 10px 0 30px 0;
+			text-align: center;
+		}
+		
+			#blog .content .comment-page .prev{
+				float: left;
+			}
+			#blog .content .comment-page .next{
 				float: right;
 			}
 
