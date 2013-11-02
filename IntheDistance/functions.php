@@ -11,8 +11,6 @@ require_once ( get_template_directory() . '/functions/options-functions.php' );
 require_once ( get_template_directory() . '/options.php' );
 
 //Settings
-add_theme_support( 'post-thumbnails' );
-add_theme_support( 'menus' );
 add_theme_support( 'automatic-feed-links' );
 add_theme_support( 'editor-style' );
 add_editor_style();
