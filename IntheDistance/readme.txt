@@ -9,4 +9,4 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 == Description ==
 
 IntheDistance is simplae & beatiful wordpress theme.
-The concept is "All for your creativeness".
+The concept is "For all of your creativeness".
