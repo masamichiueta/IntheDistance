@@ -8,7 +8,18 @@
       if(have_posts()) : 
         while (have_posts()) : the_post(); ?>
 	      <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+	        <h3 class="title">
+	        	<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+		        	<?php $title = get_the_title();
+		        		if(strlen($title) == 0){
+			        		echo "No title";
+		        		}
+		        		else{
+			        		echo $title;
+		        		}
+		        	 ?>
+				</a>
+			</h3>
 	        <div class="post-info">
 	        	<span class="post-date"><i class="fa fa-pencil-square-o"></i> <?php echo get_the_date(); ?></span>
 	        	<span class="post-category"><i class="fa fa-list-ul"></i> <?php the_category(','); ?></span> 

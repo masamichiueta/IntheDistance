@@ -7,5 +7,8 @@ the_content();
 
 endwhile; endif;
 ?>
+<div class="commentarea">
+<?php comments_template(); ?>
+</div>
 
 <?php get_footer(); ?>

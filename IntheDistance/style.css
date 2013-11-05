@@ -2,7 +2,6 @@
    ==================================================
 
 	Theme Name: IntheDistance
-	Theme URI: http://wordpress.org/
 	Description: Masamichi Ueta Original Wordpress Theme
 	License: GNU General Public License version 3.0
 	License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -13,6 +12,15 @@
 
 	All files, unless otherwise stated, are released under the GNU General Public License
 	version 3.0 (http://www.gnu.org/licenses/gpl-3.0.html)
+	
+	IntheDistance uses normalize.css - http://necolas.github.io/normalize.css/, licensed under The MIT License - http://opensource.org/licenses/mit-license.php
+	
+	IntheDistance uses Font Awesome by Dave Gandy - http://fontawesome.io
+	Lisence
+	・The Font Awesome font is licensed under the SIL Open Font License - http://scripts.sil.org/OFL.
+	・Font Awesome CSS, LESS, and SASS files are licensed under the MIT License - http://opensource.org/licenses/mit-license.html.
+	・The Font Awesome pictograms are licensed under the CC BY 3.0 License - http://creativecommons.org/licenses/by/3.0/
+	・Attribution is no longer required in Font Awesome 3.0, but much appreciated: Font Awesome by Dave Gandy - http://fortawesome.github.com/Font-Awesome.
 	
    ==================================================
 */
@@ -26,6 +34,7 @@ body{
 	font-family: "Times New Roman","Hiragino Kaku Gothic Pro","Osaka", "Meiryo","MS PGothic",sans-serif;
 	background:#fff;
 	width: 100%;
+	word-wrap: break-word;
 }
 
 h1, h2, h3, h4, h5{
@@ -177,7 +186,7 @@ nav{
 	nav ul{
 		list-style: none;
 		float: right;
-		margin: 0px;
+		margin: 10px 0 0 0;
 		padding: 0px;
 	}
 	
@@ -187,9 +196,6 @@ nav{
 		position: relative;
 		padding: 10px 20px 10px 20px;
 		margin: 0 0px 10px 5px;
-		-webkit-border-radius: 3px;
-		-moz-border-radius: 3px;
-		border-radius: 3px;	
 	}
 	
 	nav ul .current-menu-item, nav ul .current_page_parent, nav ul .current_page_item, nav ul .current_page_ancestor{
@@ -203,18 +209,11 @@ nav{
 	nav ul ul {
 		display: none;
 		position: absolute;
-		top: 30px;
+		top: 38px;
 		left: 10px;
 		margin: 0;
 		padding: 0;
 			
-	}
-	
-	nav ul ul li:first-child{ 
-		padding: 30px 20px 0 20px;
-		-webkit-border-radius:3px 3px 0px 0px;
-		-moz-border-radius: 3px 3px 0px 0px;
-		border-radius: 3px 3px 0px 0px;
 	}
 	
 	nav ul ul li:last-child{
@@ -231,9 +230,6 @@ nav{
 		padding: 10px 20px 0 20px;
 		width: 100px;
 		background-color: #fff;
-		-webkit-border-radius:0px 0px 0px 0px;
-		-moz-border-radius: 0px 0px 0px 0px;
-		border-radius: 0px 0px 0px 0px;
 	}
 	
 	nav ul ul li a {
@@ -261,8 +257,9 @@ nav{
 	nav ul ul li ul {
 		margin: 0;
 		padding: 0;
-		left: 140px;
-		top: 0;
+		left: 20px;
+		top: 38px;
+		z-index: 10;
 	}
 	nav ul ul ul .current_page_item{
 		background-color:#fff;
@@ -383,10 +380,11 @@ Contents -----------------------------------------------------------------------
 		margin: 10px 0 0 0;
 		padding: 10px 20px 0 20px;
 		font-size: 14px;
+		word-wrap: break-word;
 	}
 
 		#blog .content .post{
-				
+			
 		}
 		
 			#blog .content .post h3{
