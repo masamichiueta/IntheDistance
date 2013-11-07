@@ -33,14 +33,18 @@ function inthedistance_setup() {
 	register_nav_menu( 'header-navi', 'Header Navigation' );
 	
 	add_editor_style();
-	
-	//Include Comment Function
-	require_once ( get_template_directory() . '/functions/comment_functions.php' );
-	//Include SideBar Function
-	require_once ( get_template_directory() . '/functions/sidebar_functions.php' );
-	//Include Theme Option
-	require_once ( get_template_directory() . '/functions/options-functions.php' );
-	require_once ( get_template_directory() . '/options.php' );
+}
+?>
+<?php
+
+//Include Comment Function
+require_once ( get_template_directory() . '/functions/comment_functions.php' );
+//Include SideBar Function
+require_once ( get_template_directory() . '/functions/sidebar_functions.php' );
+//Include Theme Option
+require_once ( get_template_directory() . '/functions/options-functions.php' );
+require_once ( get_template_directory() . '/options.php' );
+
 ?>
 <?php 
 /**
@@ -55,6 +59,4 @@ function inthedistance_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'inthedistance_scripts' );
-	
-}
 ?>
