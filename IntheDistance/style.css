@@ -146,6 +146,21 @@ input[type=submit]:hover,#contact-form input[type=submit]:active {
 	background: #7b7b7b;
 }
 
+pre{
+	border: 1px solid #ddd;
+	line-height: 1.2em;
+	font: 12px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+	padding: 10px;
+	overflow:auto;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	background-color: #ddd;
+	margin: 0px;
+}
 
 
 /* ---------------------------------------------------------------------------------------------------------- 
@@ -395,6 +410,10 @@ Contents -----------------------------------------------------------------------
 		
 			#blog .content .post h3{
 				font-size: 25px;
+			}
+
+			#blog .content .post h4{
+				font-size: 20px;
 			}
 			
 			#blog .content .post .post-info{
