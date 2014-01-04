@@ -54,6 +54,9 @@ require_once ( get_template_directory() . '/options.php' );
 function inthedistance_scripts() {
 	wp_enqueue_style( 'normalize', get_template_directory_uri()."/css/normalize.css");
 	wp_enqueue_style( 'style', get_stylesheet_uri());
+	wp_enqueue_style('pc', get_template_directory_uri()."/css/pc.css", array(), false, 'only screen and (min-width: 769px)');
+	wp_enqueue_style('tablet', get_template_directory_uri()."/css/tablet.css", array(), false, 'only screen and (min-width:481px) and (max-width:768px)');
+	wp_enqueue_style('smartphone', get_template_directory_uri()."/css/smartphone.css", array(), false, 'only screen and (max-width: 480px)');
 	wp_enqueue_style( 'fontawesome', get_template_directory_uri()."/lib/font-awesome/css/font-awesome.css");
 	if(is_singular()) wp_enqueue_script( "comment-reply" );
 }

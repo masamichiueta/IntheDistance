@@ -54,7 +54,7 @@
 </a>
 <?php if ( !of_get_option('logo', false) ) { ?>
 	<h2><?php bloginfo( 'description' ); ?></h2>
-	</div>
+</div>
 <?php } ?>
 
 

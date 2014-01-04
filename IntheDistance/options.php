@@ -40,7 +40,7 @@ function optionsframework_options() {
 	// Options array	
 	$options = array();
 		
-	$options[] = array( 'name' => __('General Settings','inthedistance'),
+	$options[] = array( 'name' => __('General Options','inthedistance'),
                     	'type' => 'heading');
 						
 	$options['logo'] = array( 'name' => __('Custom Logo','inthedistance'),
@@ -81,6 +81,26 @@ function optionsframework_options() {
 						'id' => 'facebook_account_url',
 						'std' => '',
 						'type' => 'text');
+						
+	$options[] = array( "name" => __('Home Page Options','inthedistance'),
+						"type" => "heading");
+						
+	$options[] = array( 'name' => __('Home Page Image','inthedistance'),
+						'desc' => __('Upload a Png/Gif image (recommends 300px x 300px) to represent your home page.','inthedistance'),
+						'id' => 'homepage_image',
+						'type' => 'upload');
+						
+	$options[] = array( 'name' => __('Heading', 'inthedistance'),
+						'desc' => __('Heading of your homepage.', 'inthedistance'),
+						'id' => 'homepage_heading',
+						'std' => '',
+						'type' => 'text');
+						
+	$options[] = array( 'name' => __('Description', 'inthedistance'),
+						'desc' => __('Description of your homepage, your biography etc.', 'inthedistance'),
+						'id' => 'homepage_description',
+						'std' => '',
+						'type' => 'textarea');
 
 
 	return $options;
