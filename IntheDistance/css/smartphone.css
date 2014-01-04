@@ -1,18 +1,45 @@
 /* ---------------------------------------------------------------------------------------------------------- 
-Page Settings ----------------------------------------------------------------------------------------
+General Settings ----------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
-#wrapper{
-	min-width: 769px;
-	max-width: 1024px;
-	margin: 10px auto;
-	padding: 0 20px;
+
+hr{
+	width: 95%;
 }
 
 
 
+.grid1, .grid2, .grid3, .grid4, .grid5, .grid6, .grid7, .grid8, .grid9, .grid10, .grid11 {
+	float: none;
+	display: block;
+	margin-left: 0;
+}
+
+.grid1 {width: 100%;}
+.grid2 {width: 100%;}
+.grid3 {width: 100%;}
+.grid4 {width: 100%;}
+.grid5 {width: 100%;}
+.grid6 {width: 100%;}
+.grid7 {width: 100%;}
+.grid8 {width: 100%;}
+.grid9 {width: 100%;}
+.grid10 {width: 100%;}
+.grid11 {width: 100%;}
+.first {margin-left:0;clear: left;}
+
+
+/* ---------------------------------------------------------------------------------------------------------- 
+Page Settings ----------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+#wrapper{
+	width: 100%;
+}
+
 
 header{
 	height: 70px;
+	width: 95%;
+	margin: 0 auto;
 }
 
 /* for logo image */
@@ -138,6 +165,8 @@ nav{
 footer{
 	height:50px;
 	font-size: 13px;
+	width: 95%;
+	margin: 0 auto;
 }
 
 	footer ul{
@@ -167,38 +196,54 @@ Contents -----------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
 	
 #home-content{
-	width: 100%;
-    height: 100%;
+	width: 95%;
+	height: 100%;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 #home-content .image,
 #home-content .desc
 {
-    float: left;
-    width: 50%;
-    height: 350px;
 }
 
 #home-content .image
 {
-	padding: 100px 0 0 0;
+	padding: 10px 0 0 0;
 	text-align: center;
+}
+
+#home-content .image img{
+	max-width: 70%;
+	height: auto;
 }
 
 #home-content .desc
 {
-   padding: 100px 0px 0px 0px;
+   padding: 10px 0px 0px 0px;
     
 }
 
 #home-content .desc-text
 {
-   padding: 0 0 0 100px;
+	text-align: center;
+   padding: 0 0 0 10px;
+}
+
+#home-content .desc-text h2
+{
+	margin: 0;
+	padding: 0 0 10px 0;
+}
+
+#home-content .desc-text p
+{
+	margin: 0;
+	padding: 0 0 10px 0;
 }
 
 #creative{
-	width: 100%;
+	width: 95%;
     height: 100%;
     margin: 0 auto;
     word-wrap: break-word;
@@ -234,7 +279,7 @@ Contents -----------------------------------------------------------------------
 	
 	
 #blog{
-	width: 100%;
+	width: 95%;
     height: 100%;
     margin: 0 auto;
     word-wrap: break-word;
@@ -243,8 +288,12 @@ Contents -----------------------------------------------------------------------
 }
 
 	#blog .content{
-		margin: 10px 0 0 0;
-		padding: 10px 20px 0 20px;	
+		margin:0 0 0 0;
+		padding: 0 0 0 0;	
+	}
+	
+	#blog .content hr{
+		width: 100%;	
 	}
 
 		#blog .content .post{
@@ -253,6 +302,7 @@ Contents -----------------------------------------------------------------------
 					
 			#blog .content .post .post-info{
 				font-size: 14px;
+				padding: 0 0;
 			}
 				
 				#blog .content .post .post-info .post-date{
@@ -273,7 +323,7 @@ Contents -----------------------------------------------------------------------
 
 			
 			#blog .content .post .entry{
-				padding: 0 0 20px 0;
+				padding: 0 10px 20px 10px;
 			}
 			
 		#blog .content hr{
@@ -290,11 +340,11 @@ Contents -----------------------------------------------------------------------
 		}
 			#blog .content .page .previous-entries{
 				float: left;
-				padding: 20px 0;
+				padding: 10px 0;
 			}
 			
 			#blog .content .page .next-entries{
-				padding: 20px 0;
+				padding: 10px 0;
 				float: right;
 			}
 		
@@ -313,18 +363,32 @@ Contents -----------------------------------------------------------------------
 
 
 	#blog .sidebar{
-		margin: 10px 0 0 0;
-		padding: 30px 20px 0 20px;
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
 	}
 	
 		#blog .sidebar .widget{
 			margin-bottom: 30px;	
 		}
 		
+		#blog .sidebar .widget_search{
+			margin-top: 20px;	
+		}
+		
 		#blog .sidebar label{
 			font-size: 24px;
 			padding: 10px 0;
 			margin: 10px 0;	
+		}
+		
+		#blog .sidebar input#s{
+			margin-left: 10px;
+			width: 95%;
+		}
+		
+		#blog .sidebar input#searchsubmit{
+			margin-left: 10px;
+			width: 95%;
 		}
 		
 		#blog .sidebar input[type=text]{
@@ -374,7 +438,7 @@ embed{
 
 
 .alignnone {
-    margin: 5px 20px 20px 0;
+    margin: 5px 10px 10px 0;
 }
 
 .aligncenter, div.aligncenter {
@@ -384,12 +448,12 @@ embed{
 
 .alignright {
     float:right;
-    margin: 5px 0 20px 20px;
+    margin: 5px 0 10px 10px;
 }
 
 .alignleft {
     float:left;
-    margin: 5px 20px 20px 0;
+    margin: 5px 10px 10px 0;
 }
 
 .aligncenter {
@@ -399,16 +463,16 @@ embed{
 
 a img.alignright {
     float:right;
-    margin: 5px 0 20px 20px;
+    margin: 5px 0 10px 10px;
 }
 
 a img.alignnone {
-    margin: 5px 20px 20px 0;
+    margin: 5px 10px 10px 0;
 }
 
 a img.alignleft {
     float:left;
-    margin: 5px 20px 20px 0;
+    margin: 5px 10px 10px 0;
 }
 
 a img.aligncenter {
@@ -419,21 +483,27 @@ a img.aligncenter {
 
 .wp-caption {
     background: #fff;
-    max-width: 96%; /* Image does not overflow the content area */
+    max-width: 95%; /* Image does not overflow the content area */
     padding: 5px 3px 10px;
     text-align: center;
 }
 
+p.wp-caption-text {
+    margin: 0;
+    padding: 0;
+}
+
+
 .wp-caption.alignnone {
-    margin: 5px 20px 20px 0;
+    margin: 5px 10px 10px 0;
 }
 
 .wp-caption.alignleft {
-    margin: 5px 20px 20px 0;
+    margin: 5px 10px 10px 0;
 }
 
 .wp-caption.alignright {
-    margin: 5px 0 20px 20px;
+    margin: 5px 0 10px 10px;
 }
 
 .wp-caption img {
@@ -497,6 +567,14 @@ ul.qtrans_language_chooser li.active a{
 }
 
 /* Comment */
+.commentarea{
+	width: 95%;
+    margin: 0 auto;
+}
+
+.commentarea hr{
+	width: 100%;
+}
 .form-allowed-tags{display:none;}
 .says{display:none;}
 .reply{text-align: right;}
@@ -507,6 +585,7 @@ ul.qtrans_language_chooser li.active a{
 	border-radius: 50%;
 }
 .comment-author{ padding-bottom: 10px;}
+.comment-author cite{padding-left: 10px;}
 .comment-author a{padding-left: 20px;}
 ul.commentlist{
 	list-style: none;
@@ -518,9 +597,14 @@ ul.commentlist ul.children{
 	list-style: none;	
 	margin: 10px 0;
 }
+
+ul.commentlist li{
+	padding: 0 10px;
+}
+
 #commentform label{display: block;}
-#author{width:200px;}
-#email{width:200px; }
-#url{width:200px; }
-#comment{width:400px; height:100px; }
-#submit{width: 400px;}
+#author{width:100%;}
+#email{width:100%; }
+#url{width:100%; }
+#comment{width:100%; height:100px; }
+#submit{width: 100%;}
