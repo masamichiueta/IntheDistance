@@ -10,30 +10,31 @@
  
  
 if ( !function_exists( 'of_get_option' ) ) {
-function of_get_option($name, $default = false) {
-	
-	$optionsframework_settings = get_option('optionsframework');
-	
-	// Gets the unique option id
-	$option_name = $optionsframework_settings['id'];
-	
-	if ( get_option($option_name) ) {
-		$options = get_option($option_name);
-	}
+	function of_get_option($name, $default = false) {
 		
-	if ( isset($options[$name]) ) {
-		return $options[$name];
-	} else {
-		return $default;
+		$optionsframework_settings = get_option('optionsframework');
+		
+		// Gets the unique option id
+		$option_name = $optionsframework_settings['id'];
+		
+		if ( get_option($option_name) ) {
+			$options = get_option($option_name);
+		}
+			
+		if ( isset($options[$name]) ) {
+			return $options[$name];
+		} else {
+			return $default;
+		}
 	}
-}
 }
 
-if ( !function_exists( 'optionsframework_add_page' ) && current_user_can('edit_theme_options') ) {
-	function inthedistance_options_default() {
+
+if ( !function_exists( 'optionsframework_init' ) && current_user_can('edit_theme_options') ) {
+	function portfolio_options_default() {
 		add_theme_page(__('Theme Options','inthedistance'), __('Theme Options','inthedistance'), 'edit_theme_options', 'options-framework','optionsframework_page_notice');
 	}
-	add_action('admin_menu', 'inthedistance_options_default');
+	add_action('admin_menu', 'inthedisatance_options_default');
 }
 
 /**
