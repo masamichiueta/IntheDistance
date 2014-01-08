@@ -33,108 +33,175 @@ header div.logo-text{
 	}
 
 
-nav{
-	margin: 0;
-	padding: 0;
-}	
+/* navigation bar style for responsive nav*/
+.nav-collapse ul {
+  margin: 0;
+  padding: 0;
+  display: block;
+  list-style: none;
+}
 
-	/* First Level Menu */
-	nav ul{
-		list-style: none;
-		float: right;
-		margin: 10px 0 0 0;
-		padding: 0px;
+.nav-collapse li {
+  
+  display: block;
+}
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: visible;
+  zoom: 1;
+}
+
+.nav-collapse,
+.nav-collapse * {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.nav-collapse a {
+	color: #5a5b5c;
+	width: 100%;
+	float: left;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.nav-collapse a:hover{
+	color: #7fb5fc;
+}
+
+
+.nav-collapse,
+.nav-collapse ul {
+	list-style: none;
+	float: right;
+}
+
+.nav-collapse ul{
+	padding: 0px;
+	margin: 10px 0 0 0;
+}
+
+.nav-collapse ul li {
+	float: left;
+	padding: 10px 20px 10px 20px;
+	margin: 0 0px 10px 5px;
+	-webkit-border-radius:3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	position: relative;
+	width: auto;
+}
+
+.nav-collapse ul li a {
+	color: #5a5b5c;
+	text-decoration: none;
+	text-align: center;
+}
+
+	.nav-collapse .sub-menu{
+		background-color: #fff;
 	}
-	
-	nav ul li{
-		display: block;
-		float: left;
-		position: relative;
-		padding: 10px 20px 10px 20px;
-		margin: 0 0px 10px 5px;
-		-webkit-border-radius:3px;
-		-moz-border-radius: 3px;
-		border-radius: 3px;
-	}
-	
-	nav ul .current-menu-item, nav ul .current_page_parent, nav ul .current_page_item, nav ul .current_page_ancestor{
+	.nav-collapse .current_page_item, 
+	.nav-collapse .current_page_parent, 
+	.nav-collapse .current_page_ancestor{
 		background-color:#5a5b5c;
 	}
-	nav ul .current-menu-item a,nav ul .current_page_parent a,  nav ul .current_page_item a, nav ul .current_page_ancestor a{
+	
+	.nav-collapse .current_page_item a, 
+	.nav-collapse .current_page_parent a, 
+	.nav-collapse .current_page_ancestor a{
 		color: #fff;
 	}
 	
-	/* Second Level Menu */
-	nav ul ul {
+	.nav-collapse .current_page_item a:hover, 
+	.nav-collapse .current_page_parent a:hover,
+	.nav-collapse .current_page_ancestor a:hover{
+		color: #fff;
+	}
+	
+	.nav-collapse .current_page_item .sub-menu a{
+		color: #5a5b5c;
+	}
+	
+	.nav-collapse .current_page_item .sub-menu a:hover{
+		color: #7fb5fc;
+	}
+
+	.nav-collapse ul ul {
 		display: none;
 		position: absolute;
-		top: 38px;
-		left: 10px;
+		width: 100%;
+		height: 100%;
+		top: 100%;
+		left: 0px;
+		margin: 0;
+		padding: 10px 10px 0 10px;
+	}
+	
+	.nav-collapse ul ul li { 
+		float: none;
+		height: 100%;
 		margin: 0;
 		padding: 0;
-			
+		background-color: #fff;		
 	}
-	
-	nav ul ul li:last-child{
-		padding: 10px 20px 10px 20px;
-		-webkit-border-radius:0px 0px 3px 3px;
-		-moz-border-radius: 0px 0px 3px 3px;
-		border-radius: 0px 0px 3px 3px;
-	}
-	
-	nav ul ul li { 
-		float: none;
-		text-align: left;
-		margin: 0;
-		padding: 10px 20px 0 20px;
-		width: 100px;
-		background-color: #fff;
-		-webkit-border-radius:0px 0px 0px 0px;
-		-moz-border-radius: 0px 0px 0px 0px;
-		border-radius: 0px 0px 0px 0px;
-	}
-	
-	nav ul ul li a {
-		padding: 5px 0px;
+		
+	.nav-collapse ul ul li a {
+		padding: 5px 10px;
 		color: #5a5b5c !important;
+		text-align: left;
 	}
 	
-	nav ul ul li a:hover {
+	.nav-collapse ul ul li a:hover {
 		color: #7fb5fc !important;
 	}
 	
-	nav ul li:hover > ul {
+	.nav-collapse ul li:hover > ul {
 		display: block;
 	}
 	
-	nav ul ul .current_page_item, nav ul ul .current_page_parent{
+	.nav-collapse ul ul .current_page_item, 
+	.nav-collapse ul ul .current_page_parent, 
+	.nav-collapse ul ul .current_page_ancestor{
 		background-color:#fff;
 	}
-	nav ul ul .current_page_item a, nav ul ul .current_page_parent a{
+	
+	.nav-collapse ul ul .current_page_item a, 
+	.nav-collapse ul ul .current_page_parent a, 
+	.nav-collapse ul ul .current_page_ancestor a{
 		color: #5a5b5c;
-		text-decoration: underline;
 	}
 	
-	/* Third Level Menu */
-	nav ul ul li ul {
+	.nav-collapse ul ul ul {
+		position: absolute;
 		margin: 0;
 		padding: 0;
-		left: 20px;
-		top: 38px;
+		left: 100%;
+		top: 0;
 		z-index: 10;
+		width: auto;
+		height: 100%;
 	}
-	nav ul ul ul .current_page_item{
-		background-color:#fff;
-	}
-	nav ul ul ul li a{
-		text-decoration: none !important;
-	}
-	nav ul ul ul .current_page_item a{
-		color: #5a5b5c;
-		text-decoration: underline !important;
+	
+	.nav-collapse ul ul ul li{
+		float: none;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		background-color: #fff;
 	}
 
-	
+	.nav-collapse ul ul ul li a{
+		padding: 5px 10px;
+	}
+		
+		
 footer{
 	height:50px;
 	font-size: 13px;
@@ -229,7 +296,7 @@ Contents -----------------------------------------------------------------------
 	
 	#creative .content .grid-image-area p{
 		text-align: center;
-		line-height: 10px;
+		margin: 0;
 	}
 	
 	
@@ -321,16 +388,13 @@ Contents -----------------------------------------------------------------------
 			margin-bottom: 30px;	
 		}
 		
-		#blog .sidebar label{
+		#blog .sidebar .widget_search label{
 			font-size: 24px;
-			padding: 10px 0;
-			margin: 10px 0;	
+			padding: 0 0 10px 0;
+			margin: 0px 0;	
+			display: block;
 		}
-		
-		#blog .sidebar input[type=text]{
-			margin-top: 20px;	
-		}
-		
+				
 		#blog .sidebar .widget ul{
 			margin: 0;
 			padding: 0 0 0 10px;
@@ -424,16 +488,22 @@ a img.aligncenter {
     text-align: center;
 }
 
+p.wp-caption-text {
+    margin: 0;
+    padding: 0;
+}
+
+
 .wp-caption.alignnone {
-    margin: 5px 20px 20px 0;
+    margin: 5px 20px 10px 0;
 }
 
 .wp-caption.alignleft {
-    margin: 5px 20px 20px 0;
+    margin: 5px 20px 10px 0;
 }
 
 .wp-caption.alignright {
-    margin: 5px 0 20px 20px;
+    margin: 5px 0 10px 20px;
 }
 
 .wp-caption img {

@@ -2,6 +2,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
 	<!-- Favicon -->
 	<?php if ($favicon = of_get_option('custom_favicon', false) ) { ?>
@@ -58,8 +59,20 @@
 <?php } ?>
 
 
-<nav>
-	<?php wp_nav_menu( array ( 'theme_location' => 'header-navi' ) ); ?>
+<nav class="nav-collapse">
+	<?php if(has_nav_menu('primary')){
+		      wp_nav_menu( array ( 'theme_location' => 'primary', 'container' => false) );
+		  }
+		  else{
+	?>
+	<ul class="menu">
+	<?php
+		      wp_list_pages('title_li=');
+	?>
+	</ul>
+	<?php
+		  }
+	?>
 </nav>
 </header>
 

@@ -13,8 +13,10 @@ the_content();
 
 endwhile; endif;
 ?>
+<?php if(have_comments()){ ?>
 <div class="commentarea">
 <?php comments_template(); ?>
 </div>
+<?php } ?>
 
 <?php get_footer(); ?>

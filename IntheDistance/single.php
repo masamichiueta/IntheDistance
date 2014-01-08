@@ -31,12 +31,12 @@
 			?>
 	        <?php the_content(); ?>
 	        </div>
-	        <div class="post-page">
-	        <?php wp_link_pages(); ?>
-	        </div>
+	        <?php wp_link_pages('before=<div class="post-page">&after=</div>'); ?>
+	        <?php if(have_comments()){ ?>
 			<div class="commentarea">
 	      	<?php comments_template(); ?>
 		  	</div>
+		  	<?php } ?>
 		  	</div>
 		  	<?php endwhile;?>
 	<?php

@@ -24,8 +24,10 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
+<?php if(have_comments()){ ?>
 <div class="commentarea">
-<?php comments_template(); ?>
+	<?php comments_template(); ?>
 </div>
+<?php } ?>
 
 <?php get_footer(); ?>
