@@ -48,6 +48,7 @@ body{
 	font-family: "Times New Roman","Hiragino Kaku Gothic Pro","Osaka", "Meiryo","MS PGothic",sans-serif;
 	background:#fff;
 	width: 100%;
+	word-wrap: break-word;
 }
 
 h1, h2, h3, h4, h5{
@@ -76,6 +77,32 @@ h6{
     padding: 10px 0;
     margin: 10px 0;
 }
+
+table {
+  table-layout:fixed;
+  width: 100%; 
+  border-collapse: collapse; 
+}
+
+
+tr:nth-of-type(odd) { 
+  background: #eee; 
+}
+th { 
+  background: #5a5b5c; 
+  color: white;
+  font-weight: bold; 
+}
+th a{
+	color: #fff;
+}
+
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+}
+
 
 .clearfix:before,
 .clearfix:after {
