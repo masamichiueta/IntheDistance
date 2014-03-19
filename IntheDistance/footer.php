@@ -13,13 +13,13 @@
 	</ul>
 	<p class="copyright">
 	<?php if (!$footer = of_get_option('footer_copyright', false) ) { ?>
-	<?php _e('Powered by', 'inthedistance'); ?> 
+	<?php _e('Powered by', 'inthedistance'); ?>
 		<a href="http://wordpress.org/" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'inthedistance' ); ?>" rel="generator"><?php printf( __( 'WordPress', 'inthedistance' ) ); ?>
-		</a> &amp; 
+		</a> &amp;
 		<a href="http://www.uetamasamichi.com"><?php _e('IntheDistance', 'inthedistance'); ?>.</a>
 	<?php } else {
-		echo stripslashes($footer);
-	} ?>
+	echo stripslashes($footer);
+} ?>
 	</p>
 </footer>
 <div class="rainbowDash">

@@ -20,18 +20,18 @@ add_action( 'after_setup_theme', 'inthedistance_setup' );
  */
 
 function inthedistance_setup() {
-	
+
 	//ContentWidth
 	if ( ! isset( $content_width ) ) $content_width = 900;
-	
+
 	//Settings
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'menus' );
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'editor-style' );
-	
+
 	register_nav_menu( 'primary', 'Primary Menu' );
-	
+
 	add_editor_style();
 }
 ?>
@@ -46,7 +46,7 @@ require_once ( get_template_directory() . '/functions/options-functions.php' );
 require_once ( get_template_directory() . '/options.php' );
 
 ?>
-<?php 
+<?php
 /**
  * Sets up theme styles and scripts.
  *
@@ -62,7 +62,7 @@ function inthedistance_scripts() {
 	wp_enqueue_script('jquery'); // jQuery including by wordpress
 	wp_enqueue_script( 'responsive-nav', get_template_directory_uri()."/lib/responsive-nav/js/responsive-nav.min.js");
 	if(is_singular()) wp_enqueue_script( "comment-reply" );
-	
+
 	//Load in footer
 	wp_enqueue_script( 'theme-functions', get_template_directory_uri()."/js/theme-functions.js",'','',true);
 }

@@ -13,7 +13,8 @@ the_content();
 
 endwhile; endif;
 ?>
-<?php if(have_comments()){ ?>
+<?php $comments = get_comments();
+      if( $comments ) { ?>
 <div class="commentarea">
 <?php comments_template(); ?>
 </div>

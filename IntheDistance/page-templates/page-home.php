@@ -1,6 +1,6 @@
-<?php 
+<?php
 /*
- * Template Name: Home 
+ * Template Name: Home
  * Description: Home page template
  */
 
@@ -24,7 +24,8 @@ get_header(); ?>
 		</div>
 	</div>
 </div>
-<?php if(have_comments()){ ?>
+<?php $comments = get_comments();
+if( $comments ) { ?>
 <div class="commentarea">
 	<?php comments_template(); ?>
 </div>

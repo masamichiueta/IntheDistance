@@ -3,7 +3,7 @@
 function inthedistance_comment($comment, $args, $depth) {
 	$GLOBALS['comment'] = $comment;
 	extract($args, EXTR_SKIP);
-	
+
 	if ( 'div' == $args['style'] ) {
 		$tag = 'div';
 		$add_below = 'comment';
@@ -26,7 +26,7 @@ function inthedistance_comment($comment, $args, $depth) {
 <?php endif; ?>
 <div class="comment-meta commentmetadata"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>">
 <?php
-printf( __('%1$s at %2$s'), get_comment_date(),  get_comment_time()) ?></a><?php edit_comment_link(__('(Edit)'),'  ','' );
+	printf( __('%1$s at %2$s'), get_comment_date(),  get_comment_time()) ?></a><?php edit_comment_link(__('(Edit)'),'  ','' );
 ?>
 </div>
 <?php comment_text() ?>
@@ -36,6 +36,6 @@ printf( __('%1$s at %2$s'), get_comment_date(),  get_comment_time()) ?></a><?php
 <?php if ( 'div' != $args['style'] ) : ?>
 </div>
 <hr>
-<?php endif; 
+<?php endif;
 }
 ?>

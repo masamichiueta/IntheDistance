@@ -11,4 +11,3 @@
 <?php paginate_comments_links();?>
 </div>
 <?php comment_form( ); ?>
-

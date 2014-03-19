@@ -2,25 +2,25 @@
 /**
  * @package IntheDistance
  */
- 
+
 /**
  * Theme options require the "Options Framework" plugin to be installed in order to display.
  * If it's not installed, default settings will be used.
  */
- 
- 
+
+
 if ( !function_exists( 'of_get_option' ) ) {
 	function of_get_option($name, $default = false) {
-		
+
 		$optionsframework_settings = get_option('optionsframework');
-		
+
 		// Gets the unique option id
 		$option_name = $optionsframework_settings['id'];
-		
+
 		if ( get_option($option_name) ) {
 			$options = get_option($option_name);
 		}
-			
+
 		if ( isset($options[$name]) ) {
 			return $options[$name];
 		} else {
@@ -43,7 +43,7 @@ if ( !function_exists( 'optionsframework_init' ) && current_user_can('edit_theme
 
 if ( !function_exists( 'optionsframework_page_notice' ) ) {
 	function optionsframework_page_notice() { ?>
-	
+
 		<div class="wrap">
 		<?php screen_icon( 'themes' ); ?>
 		<h2><?php _e('Theme Options','inthedistance'); ?></h2>
@@ -58,7 +58,7 @@ if ( !function_exists( 'optionsframework_page_notice' ) ) {
         <li><?php _e('Update the twitter url','inthedistance'); ?></li>
         <li><?php _e('Update the facebook url','inthedistance'); ?></li>
         </ul>
-        
+
         <p><?php _e('If you don\'t need these options, the plugin is not required and default settings will be used.','inthedistance'); ?></p>
 		</div>
 	<?php
