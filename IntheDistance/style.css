@@ -5,7 +5,7 @@
 	Description: IntheDistance is a simple & beautiful responsive wordpress theme.
 	License: GNU General Public License version 3.0
 	License URI: http://www.gnu.org/licenses/gpl-3.0.html
-	Version: 0.2.1
+	Version: 0.3.0
 	Tags: white, responsive-layout, two-columns, right-sidebar, custom-menu, theme-options, editor-style
 	Author: Masamichi Ueta
 	Author URI: http://www.uetamasamichi.com
@@ -40,42 +40,60 @@
 General Settings ----------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
 body {
-	font-family:"Times New Roman","Hiragino Kaku Gothic Pro","Osaka","Meiryo","MS PGothic",sans-serif;
 	background:#fff;
 	width:100%;
 	word-wrap:break-word;
 }
 
-h1,h2,h3,h4,h5 {
-	font-weight:400;
-	padding:10px 0 0;
-	margin:10px 0;
+body,button,input,select,textarea {
+	font-family:"Lato","Helvetica Neue",Helvetica,Arial,"Hiragino Kaku Gothic Pro","Osaka","Meiryo","MS PGothic",sans-serif;
+	font-size:1em;
+	line-height:1.75;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight:700;
+}
+
+header,footer {
+	font-weight:300;
 }
 
 h1 {
-	font-size:32px;
+	margin-top:.76190476190476em;
+	margin-bottom:.76190476190476em;
+	font-size:1.75em;
+	letter-spacing:-1px;
 }
 
 h2 {
-	font-size:28px;
+	margin-top:.88888888888889em;
+	margin-bottom:.88888888888889em;
+	font-size:1.5em;
 }
 
 h3 {
-	font-size:24px;
+	margin-top:1.0666666666667em;
+	margin-bottom:1.0666666666667em;
+	font-size:1.25em;
 }
 
 h4 {
-	font-size:20px;
+	margin-top:1.3333333333333em;
+	margin-bottom:1.3333333333333em;
+	font-size:1em;
 }
 
-h5 {
-	font-size:16px;
+h5,h6 {
+	margin-top:1.7777777777778em;
+	margin-bottom:1.7777777777778em;
+	font-size:.75em;
 }
 
 h6 {
-	font-size:16px;
-	padding:10px 0;
-	margin:10px 0;
+	margin-top:2.6666666666667em;
+	margin-bottom:2.6666666666667em;
+	font-size:.5em;
 }
 
 table {

@@ -116,7 +116,7 @@ header div.logo-text h1,header div.logo-text h2 {
 
 footer {
 	height:50px;
-	font-size:13px;
+	font-size: 0.75em;
 }
 
 footer ul {
@@ -175,8 +175,6 @@ Contents -----------------------------------------------------------------------
 	width:100%;
 	height:100%;
 	margin:0 auto;
-	line-height:150%;
-	font-size:16px;
 }
 
 #creative h2 {
@@ -208,8 +206,6 @@ Contents -----------------------------------------------------------------------
 	width:100%;
 	height:100%;
 	margin:0 auto;
-	line-height:150%;
-	font-size:16px;
 }
 
 #blog .grid9 {
@@ -230,7 +226,8 @@ Contents -----------------------------------------------------------------------
 }
 
 #blog .content .post .post-info {
-	font-size:14px;
+	font-size:0.75em;
+	font-weight: 300;
 }
 
 #blog .content .post .post-info .post-date {
@@ -310,7 +307,8 @@ Contents -----------------------------------------------------------------------
 }
 
 #blog .sidebar .widget_search label {
-	font-size:24px;
+	font-weight: 700;
+	font-size: 1.25em;
 	padding:10px 0;
 	margin:10px 0;
 	display:block;
@@ -320,12 +318,11 @@ Contents -----------------------------------------------------------------------
 	margin:0 auto;
 	text-align:center;
 	height:200px;
-	font-size:16px;
 }
 
 #notfound h2 {
 	margin:50px 0;
-	font-size:40px;
+	font-size:3em;
 }
 
 #notfound p {
@@ -462,7 +459,8 @@ ul.qtrans_language_chooser {
 
 ul.qtrans_language_chooser li {
 	float:left;
-	font-size:15px;
+	font-size:0.75em;
+	font-weight: 300;
 	padding-right:20px;
 }
 

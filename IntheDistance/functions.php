@@ -59,6 +59,7 @@ function inthedistance_scripts() {
 	wp_enqueue_style('pc', get_template_directory_uri()."/css/pc.css", array(), false, 'only screen and (min-width: 769px)');
 	wp_enqueue_style('tablet', get_template_directory_uri()."/css/tablet.css", array(), false, 'only screen and (min-width:481px) and (max-width:768px)');
 	wp_enqueue_style('smartphone', get_template_directory_uri()."/css/smartphone.css", array(), false, 'only screen and (max-width: 480px)');
+	wp_enqueue_style('Lato', 'http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic');
 	wp_enqueue_script('jquery'); // jQuery including by wordpress
 	wp_enqueue_script( 'responsive-nav', get_template_directory_uri()."/lib/responsive-nav/js/responsive-nav.min.js");
 	if(is_singular()) wp_enqueue_script( "comment-reply" );
