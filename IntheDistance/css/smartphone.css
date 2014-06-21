@@ -64,6 +64,11 @@ Page Settings ------------------------------------------------------------------
 	margin:10px auto;
 }
 
+.content-wrapper{
+    width:95%;
+	margin:10px auto;
+}
+
 header {
 	height:70px;
 }

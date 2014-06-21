@@ -2,13 +2,13 @@
 <footer class="clearfix">
 	<ul>
         <?php if( $github_account_url = esc_url(of_get_option('github_account_url', false))) : ?>
-		<li><a href="<?php echo $github_account_url; ?>"><i class="fa fa-github-square"></i></a></li>
+		<li><a href="<?php echo $github_account_url; ?>"><i class="fa fa-3x fa-github-square"></i></a></li>
 		<?php endif; ?>
 		<?php if( $twitter_account_url = esc_url(of_get_option('twitter_account_url', false))) : ?>
-		<li><a href="<?php echo $twitter_account_url; ?>"><i class="fa fa-twitter-square"></i></a></li>
+		<li><a href="<?php echo $twitter_account_url; ?>"><i class="fa fa-3x fa-twitter-square"></i></a></li>
 		<?php endif; ?>
 		<?php if( $facebook_account_url = esc_url(of_get_option('facebook_account_url', false))) : ?>
-		<li><a href="<?php echo $facebook_account_url; ?>"><i class="fa fa-facebook-square"></i></a></li>
+		<li><a href="<?php echo $facebook_account_url; ?>"><i class="fa fa-3x fa-facebook-square"></i></a></li>
 		<?php endif; ?>
 	</ul>
 	<p class="copyright">

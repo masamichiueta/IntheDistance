@@ -8,6 +8,13 @@ Page Settings ------------------------------------------------------------------
 	padding:0 20px;
 }
 
+.content-wrapper {
+    min-width:769px;
+	max-width:1024px;
+	margin:10px auto;
+	padding:0 20px;
+}
+
 header {
 	height:70px;
 }
@@ -200,7 +207,7 @@ footer ul {
 footer ul li {
 	float:left;
 	padding:0 10px 0 0;
-	font-size:30px;
+
 }
 
 footer .copyright {

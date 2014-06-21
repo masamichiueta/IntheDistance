@@ -56,6 +56,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 header,footer {
+
 	font-weight:300;
 }
 
@@ -94,6 +95,16 @@ h6 {
 	margin-top:2.6666666666667em;
 	margin-bottom:2.6666666666667em;
 	font-size:.5em;
+}
+
+header h1{
+    font-family: 'Merriweather',"Helvetica Neue",Helvetica,Arial,"Hiragino Kaku Gothic Pro","Osaka","Meiryo","MS PGothic", serif;
+}
+
+header h2{
+    font-family: 'Merriweather',"Helvetica Neue",Helvetica,Arial,"Hiragino Kaku Gothic Pro","Osaka","Meiryo","MS PGothic", serif;
+    font-weight: 300;
+    font-size: 1em;
 }
 
 table {
