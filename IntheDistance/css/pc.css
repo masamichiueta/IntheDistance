@@ -2,23 +2,28 @@
 Page Settings ----------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
 #wrapper {
-	min-width:769px;
-	max-width:1024px;
-	margin:10px auto;
-	padding:0 20px;
 }
 
-.content-wrapper {
+.container-outer{
+    width: 100%;
+    background: #fff;
+	/* overflow: hidden; */
+}
+
+.container-inner {
     min-width:769px;
 	max-width:1024px;
-	margin:10px auto;
+	margin:0px auto;
 	padding:0 20px;
 }
 
-header {
-	height:70px;
+#header{
+    background: #fff;
 }
 
+.header-content{
+    padding: 20px 0;
+}
 /* for logo image */
 header h1.logo-image {
 	float:left;
@@ -88,11 +93,8 @@ header div.logo-text h1,header div.logo-text h2 {
 
 .nav-collapse ul li {
 	float:left;
-	padding:2px 20px;
+ 	padding:2px 10px;
 	margin:0 0 10px 5px;
-	-webkit-border-radius:3px;
-	-moz-border-radius:3px;
-	border-radius:3px;
 	position:relative;
 	width:auto;
 }
@@ -104,19 +106,15 @@ header div.logo-text h1,header div.logo-text h2 {
 }
 
 .nav-collapse .sub-menu {
-	background-color:#fff;
-}
-
-.nav-collapse .current_page_item,.nav-collapse .current_page_parent,.nav-collapse .current_page_ancestor {
-	background-color:#5a5b5c;
+	background:#fff;
 }
 
 .nav-collapse .current_page_item a,.nav-collapse .current_page_parent a,.nav-collapse .current_page_ancestor a {
-	color:#fff;
+	color: #7fb5fc;
 }
 
 .nav-collapse .current_page_item a:hover,.nav-collapse .current_page_parent a:hover,.nav-collapse .current_page_ancestor a:hover {
-	color:#fff;
+	color: #7fb5fc;
 }
 
 .nav-collapse .current_page_item .sub-menu a {
@@ -135,7 +133,7 @@ header div.logo-text h1,header div.logo-text h2 {
 	top:100%;
 	left:0;
 	margin:0;
-	padding:20px 10px;
+	padding:20px 0px;
 }
 
 .nav-collapse ul ul li {
@@ -143,7 +141,7 @@ header div.logo-text h1,header div.logo-text h2 {
 	height:100%;
 	margin:0;
 	padding:0;
-	background-color:#fff;
+	background:#fff;
 }
 
 .nav-collapse ul ul li a {
@@ -153,7 +151,7 @@ header div.logo-text h1,header div.logo-text h2 {
 }
 
 .nav-collapse ul ul li a:hover {
-	color:#7fb5fc!important;
+	color:#7fb5fc !important;
 }
 
 .nav-collapse ul li:hover > ul {
@@ -161,7 +159,7 @@ header div.logo-text h1,header div.logo-text h2 {
 }
 
 .nav-collapse ul ul .current_page_item,.nav-collapse ul ul .current_page_parent,.nav-collapse ul ul .current_page_ancestor {
-	background-color:#fff;
+	background:#fff;
 }
 
 .nav-collapse ul ul .current_page_item a,.nav-collapse ul ul .current_page_parent a,.nav-collapse ul ul .current_page_ancestor a {
@@ -177,6 +175,7 @@ header div.logo-text h1,header div.logo-text h2 {
 	z-index:10;
 	width:auto;
 	height:100%;
+	background: #eee;
 }
 
 .nav-collapse ul ul ul li {
@@ -184,22 +183,35 @@ header div.logo-text h1,header div.logo-text h2 {
 	height:100%;
 	margin:0;
 	padding:0;
-	background-color:#fff;
+	background:#eee;
 }
 
 .nav-collapse ul ul ul li a {
 	padding:2px 20px;
 }
 
+#footer{
+    background: #2D2219;
+}
+
 footer {
-	height:50px;
+	height:200px;
 	font-size: 0.75em;
+	padding: 10px 0px;
+    color: #fff;
+}
+
+footer a{
+    color: #62A3C4;
+}
+
+footer a.hover{
+    color: #7fb5fc;
 }
 
 footer ul {
 	list-style:none;
 	float:left;
-	background:#fff;
 	margin:0;
 	padding-left:10px;
 }
@@ -219,6 +231,7 @@ footer .copyright {
 /* ----------------------------------------------------------------------------------------------------------
 Contents ----------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
+
 #home-content {
 	width:100%;
 	height:100%;
@@ -255,7 +268,7 @@ Contents -----------------------------------------------------------------------
 }
 
 #creative .content {
-	padding:0 10px;
+	padding:0px;
 	margin-top:0;
 	margin-bottom:30px;
 	margin-right:auto;
@@ -282,8 +295,8 @@ Contents -----------------------------------------------------------------------
 }
 
 #blog .content {
-	margin:10px 0 0;
-	padding:10px 20px 0;
+	margin:0px;
+	padding:10px 0px 0px 0px;
 }
 
 #blog .content .post {

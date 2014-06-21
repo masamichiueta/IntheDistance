@@ -5,7 +5,8 @@
  */
 
 get_header(); ?>
-
+<div class="container-outer">
+<div class="container-inner clearfix">
 <div id="home-content">
 <?php if ($homepage_image = of_get_option('homepage_image', false) ) : ?>
 	<div class="image clearfix" >
@@ -31,4 +32,6 @@ if( $comments ) { ?>
 </div>
 <?php } ?>
 
+</div><!-- container-inner-->
+</div><!-- container-outer-->
 <?php get_footer(); ?>

@@ -20,10 +20,16 @@
 
 <body <?php body_class(); ?>>
 <div id="wrapper">
-<div class="rainbowDash">
+
+<!--
+<div class="belt belt-top">
 	<div class="blue"></div>
-	<div class="yellow"></div>
 </div>
+-->
+
+<div class="container-outer" id="header">
+<div class="container-inner clearfix">
+<header class="clearfix">
 <?php
 //Check if qtranslate plugin has been installed
 if(function_exists('qtrans_generateLanguageSelectCode')) :
@@ -31,9 +37,7 @@ if(function_exists('qtrans_generateLanguageSelectCode')) :
 endif;
 ?>
 <div class="clear"></div>
-
-<header class="clearfix">
-
+<div class="header-content clearfix">
 <a href="<?php echo esc_url(home_url( '/' )); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 
 <!-- When logo image is set -->
@@ -74,6 +78,10 @@ else{
 }
 ?>
 </nav>
+</div><!-- header-content -->
 </header>
-
-<hr>
+</div><!-- container-inner -->
+</div><!-- container-outer -->
+<div class="belt belt-separator">
+	<div class="blue"></div>
+</div>

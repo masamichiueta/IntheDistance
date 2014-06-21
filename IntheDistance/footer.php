@@ -1,4 +1,8 @@
-<hr>
+<div class="belt belt-separator">
+	<div class="blue"></div>
+</div>
+<div class="container-outer" id="footer">
+<div class="container-inner clearfix">
 <footer class="clearfix">
 	<ul>
         <?php if( $github_account_url = esc_url(of_get_option('github_account_url', false))) : ?>
@@ -22,10 +26,8 @@
 } ?>
 	</p>
 </footer>
-<div class="rainbowDash">
-	<div class="yellow"></div>
-	<div class="blue"></div>
-</div>
+</div><! -- container-inner -->
+</div><!-- container-outer -->
 </div><!--wrapper-->
 <?php wp_footer(); ?>
 </body>

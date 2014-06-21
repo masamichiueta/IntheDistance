@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<div class="container-outer">
+<div class="container-inner clearfix">
 <div id="blog">
 <!-- <h2>Blog</h2> -->
 <div class="grid9 first">
@@ -47,5 +49,6 @@ else : ?>
 </div>
 <?php get_sidebar(); ?>
 </div>
-
+</div><!-- container-inner -->
+</div><!-- container-outer -->
 <?php get_footer(); ?>

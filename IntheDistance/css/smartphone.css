@@ -60,17 +60,29 @@ General Settings ---------------------------------------------------------------
 Page Settings ----------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
 #wrapper {
-	width:95%;
+	/*
+width:95%;
 	margin:10px auto;
+*/
 }
 
-.content-wrapper{
+.container-outer{
+    width: 100%;
+    background: #fff;
+	overflow: hidden;
+}
+
+.container-inner {
     width:95%;
 	margin:10px auto;
 }
 
-header {
-	height:70px;
+#header{
+    background: #fff;
+}
+
+.header-content{
+    padding: 20px 0;
 }
 
 /* for logo image */
@@ -121,27 +133,19 @@ header div.logo-text h1,header div.logo-text h2 {
 	width:100%;
 }
 
-.nav-collapse .sub-menu {
-	background-color:#fff;
-}
-
-.nav-collapse .current_page_item {
-	background-color:#5a5b5c;
-}
-
 .nav-collapse .current_page_item a {
-	color:#fff;
+	color:#7fb5fc;
 }
 
 .nav-collapse .current_page_item a:hover {
-	color:#fff;
+	color:#7fb5fc;
 }
 
-.nav-collapse .current_page_item .sub-menu a {
+.nav-collapse .current_page_item .children a {
 	color:#5a5b5c;
 }
 
-.nav-collapse .current_page_item .sub-menu a:hover {
+.nav-collapse .current_page_item .children a:hover {
 	color:#7fb5fc;
 }
 
@@ -177,15 +181,29 @@ header div.logo-text h1,header div.logo-text h2 {
 	}
 }
 
+
+#footer{
+    background: #2D2219;
+}
+
 footer {
-	height:50px;
+	height:200px;
 	font-size: 0.75em;
+	padding: 10px 0px;
+    color: #fff;
+}
+
+footer a{
+    color: #62A3C4;
+}
+
+footer a.hover{
+    color: #7fb5fc;
 }
 
 footer ul {
 	list-style:none;
 	float:left;
-	background:#fff;
 	margin:0;
 	padding-left:10px;
 }
@@ -193,7 +211,6 @@ footer ul {
 footer ul li {
 	float:left;
 	padding:0 10px 0 0;
-	font-size:30px;
 }
 
 footer .copyright {
@@ -253,7 +270,7 @@ Contents -----------------------------------------------------------------------
 }
 
 #creative .content {
-	padding:0 10px;
+	padding:0px;
 	margin-top:0;
 	margin-bottom:0;
 	margin-right:auto;
@@ -283,7 +300,7 @@ Contents -----------------------------------------------------------------------
 }
 
 #blog .content {
-	margin:10px 0 0;
+	margin:0px;
 	padding:10px 20px 0;
 }
 
