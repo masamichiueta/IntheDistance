@@ -85,9 +85,9 @@ function optionsframework_options() {
 	$options[] = array( "name" => __('Home Page Options','inthedistance'),
 		"type" => "heading");
 
-	$options[] = array( 'name' => __('Home Page Image','inthedistance'),
-		'desc' => __('Upload a Png/Gif image (recommends 300px x 300px) to represent your home page.','inthedistance'),
-		'id' => 'homepage_image',
+    $options[] = array( 'name' => __('Home Page Heading Image','inthedistance'),
+		'desc' => __('Upload a JPG/PNG image to represent your home page.','inthedistance'),
+		'id' => 'homepage_heading_image',
 		'type' => 'upload');
 
 	$options[] = array( 'name' => __('Heading', 'inthedistance'),

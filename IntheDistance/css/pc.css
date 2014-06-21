@@ -232,29 +232,29 @@ footer .copyright {
 Contents ----------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
 
+#home-heading-image{
+    height: 500px;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
 #home-content {
-	width:100%;
-	height:100%;
-	margin:0 auto;
+    text-align: center;
 }
 
-#home-content .image,#home-content .desc {
-	float:left;
-	width:50%;
-	height:350px;
+#home-content h2{
+    font-size: 4em;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    color: #fff;
 }
 
-#home-content .image {
-	padding:100px 0 0;
-	text-align:center;
-}
-
-#home-content .desc {
-	padding:100px 0 0;
-}
-
-#home-content .desc-text {
-	padding:0 0 0 100px;
+#home-heading-description{
+    font-weight: 300;
+    font-size: 2em;
+    margin: 0em;
+    color: #fff;
 }
 
 #creative {

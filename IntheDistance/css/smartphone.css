@@ -74,7 +74,7 @@ width:95%;
 
 .container-inner {
     width:95%;
-	margin:10px auto;
+	margin:0px auto;
 }
 
 #header{
@@ -222,42 +222,29 @@ footer .copyright {
 /* ----------------------------------------------------------------------------------------------------------
 Contents ----------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
+#home-heading-image{
+    height: 500px;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
 #home-content {
-	height:100%;
-	margin:0 auto;
-	padding:0 10px;
+    text-align: center;
 }
 
-#home-content .image,#home-content .desc {
+#home-content h2{
+    font-size: 4em;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    color: #fff;
 }
 
-#home-content .image {
-	padding:10px 0 0;
-	text-align:center;
-}
-
-#home-content .image img {
-	max-width:70%;
-	height:auto;
-}
-
-#home-content .desc {
-	padding:10px 0 0;
-}
-
-#home-content .desc-text {
-	text-align:center;
-	padding:0 0 0 10px;
-}
-
-#home-content .desc-text h2 {
-	margin:0;
-	padding:0 0 10px;
-}
-
-#home-content .desc-text p {
-	margin:0;
-	padding:0 0 10px;
+#home-heading-description{
+    font-weight: 300;
+    font-size: 2em;
+    margin: 0em;
+    color: #fff;
 }
 
 #creative {
