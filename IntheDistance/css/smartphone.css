@@ -194,7 +194,7 @@ footer {
 }
 
 footer a{
-    color: #62A3C4;
+    color: #fff;
 }
 
 footer a.hover{
@@ -234,7 +234,7 @@ Contents -----------------------------------------------------------------------
 }
 
 #home-content h2{
-    font-size: 4em;
+    font-size: 3em;
     margin-top: 2em;
     margin-bottom: 0.5em;
     color: #fff;
@@ -242,9 +242,13 @@ Contents -----------------------------------------------------------------------
 
 #home-heading-description{
     font-weight: 300;
-    font-size: 2em;
-    margin: 0em;
+    font-size: 1.5em;
     color: #fff;
+    line-height: 1.5em;
+}
+
+#home-heading-description p{
+    margin: 0px;
 }
 
 #creative {
