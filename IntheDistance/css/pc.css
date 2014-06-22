@@ -239,11 +239,11 @@ Contents -----------------------------------------------------------------------
     background-position:center center;
 }
 
-#home-content {
+#home-heading {
     text-align: center;
 }
 
-#home-content h2{
+#home-heading h2{
     font-size: 4em;
     margin-top: 2em;
     margin-bottom: 0.5em;
@@ -258,6 +258,19 @@ Contents -----------------------------------------------------------------------
 }
 
 #home-heading-description p{
+    margin: 0px;
+}
+
+#home-content .recent-updates li{
+    padding: 10px;
+}
+
+#home-content .recent-updates li a{
+    line-height: 1em;
+}
+
+#home-content .recent-updates p{
+    line-height: 1em;
     margin: 0px;
 }
 
